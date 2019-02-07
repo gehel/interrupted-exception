@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.wikimedia.discovery</groupId>
+        <artifactId>discovery-parent-pom</artifactId>
+        <version>1.23</version>
+    </parent>
+
+    <groupId>org.wikimedia.discovery.lc</groupId>
+    <artifactId>interrupted-exception</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>Learning Circle about thread interruptions</name>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>gehel</id>
+            <name>Guillaume Lederrey</name>
+            <email>guillaume.lederrey@wikimedia.org</email>
+            <timezone>Europe/Zurich</timezone>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:gehel/interrupted-exception.git</connection>
+        <developerConnection>scm:git:git@github.com:gehel/interrupted-exception.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/gehel/interrupted-exception</url>
+    </scm>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/gehel/interrupted-exception</url>
+    </issueManagement>
+
+</project>
+
