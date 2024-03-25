@@ -18,6 +18,7 @@ public class T6_InterruptedException {
         try {
             Thread.sleep(10_000L);
         } catch (InterruptedException e) {
+            // cleanup
             Thread.currentThread().interrupt();
         }
     }

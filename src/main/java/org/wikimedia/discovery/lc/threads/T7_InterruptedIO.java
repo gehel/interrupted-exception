@@ -3,6 +3,7 @@ package org.wikimedia.discovery.lc.threads;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.InterruptedIOException;
 
 public class T7_InterruptedIO {
     public static void main(String[] args) throws InterruptedException {
@@ -27,7 +28,11 @@ public class T7_InterruptedIO {
                 // readLine() will block indefinitely if no input
                 buffer.read();
 
-        } catch (IOException ignore) {}
+        } catch (InterruptedIOException ignore) {
+            Thread.currentThread().interrupt();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 }
